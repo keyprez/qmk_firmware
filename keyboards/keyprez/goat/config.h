@@ -6,8 +6,8 @@
 #include "config_common.h"
 
 /* USB Device descriptor parameter */
-#define VENDOR_ID    0xFEED
-#define PRODUCT_ID   0x0000
+#define VENDOR_ID    0x6B7A
+#define PRODUCT_ID   0x6B7A
 #define DEVICE_VER   0x0001
 #define MANUFACTURER keyprez
 #define PRODUCT      goat
@@ -16,7 +16,7 @@
 #define MATRIX_ROWS 10
 #define MATRIX_COLS 7
 
-#define TAPPING_TERM 400
+#define TAPPING_TERM 200
 // Prevent normal rollover on alphas from accidentally triggering mods.
 #define IGNORE_MOD_TAP_INTERRUPT
 
