@@ -6,8 +6,8 @@
 #include "config_common.h"
 
 /* USB Device descriptor parameter */
-#define VENDOR_ID    0xFEED
-#define PRODUCT_ID   0x0000
+#define VENDOR_ID    0x6B7A
+#define PRODUCT_ID   0x6862
 #define DEVICE_VER   0x0001
 #define MANUFACTURER keyprez
 #define PRODUCT      hummingbird
@@ -16,13 +16,14 @@
 #define MATRIX_ROWS 8
 #define MATRIX_COLS 6
 
-#define TAPPING_TERM 200
+#define TAPPING_TERM 300
 
 // Prevent normal rollover on alphas from accidentally triggering mods.
 #define IGNORE_MOD_TAP_INTERRUPT
 
 // Enable rapid switch from tap to hold, disables double tap hold auto-repeat.
 #define TAPPING_FORCE_HOLD
+
 
 /*
  * Keyboard Matrix Assignments
@@ -44,6 +45,7 @@
 /*
  * Split Keyboard specific options, make sure you have 'SPLIT_KEYBOARD = yes' in your rules.mk, and define SOFT_SERIAL_PIN.
  */
+#define SPLIT_USB_DETECT
 #define SOFT_SERIAL_PIN D2  // or D1, D2, D3, E6
 
 //#define LED_NUM_LOCK_PIN B0
@@ -67,12 +69,12 @@
 #define RGBLIGHT_LIMIT_VAL 255 /* The maximum brightness level */
 #define RGBLIGHT_SLEEP  /* If defined, the RGB lighting will be switched off when the host goes to sleep */
 /*== all animations enable ==*/
-#define RGBLIGHT_ANIMATIONS
+//#define RGBLIGHT_ANIMATIONS
 /*== or choose animations ==*/
-//#    define RGBLIGHT_EFFECT_BREATHING
+#define RGBLIGHT_EFFECT_BREATHING
 //#    define RGBLIGHT_EFFECT_RAINBOW_MOOD
 //#    define RGBLIGHT_EFFECT_RAINBOW_SWIRL
-//#    define RGBLIGHT_EFFECT_SNAKE
+#define RGBLIGHT_EFFECT_SNAKE
 //#    define RGBLIGHT_EFFECT_KNIGHT
 //#    define RGBLIGHT_EFFECT_CHRISTMAS
 //#    define RGBLIGHT_EFFECT_STATIC_GRADIENT
